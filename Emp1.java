@@ -1,38 +1,39 @@
-import java.util.Scanner;
- 
  class Emp1{
-       public static void main(String args[]){
-       
-       Scanner obj =new Scanner(System.in);
-       System.out.println("Enter name of the Employee:");
-       String name =obj.nextLine();
-
-       System.out.println("enter salary: ");
-       float sal =obj.nextFloat();
-
-       obj.nextLine();
-
-       System.out.println("enetr job profile");
-       String profile =obj.nextLine();
-       
-       System.out.println("enter Empno: ");
-      int empno =obj.nextInt();
-
-      System.out.println("enter Depno: ");
-      int deptno =obj.nextInt();
-
-      System.out.println("enter grade: ");
-      char g= obj.next().charAt(0);
-
-
-
-     System.out.println("Name: " +name);
-     System.out.println("salary: " +sal);
-     System.out.println("job profile: " +profile);
-     System.out.println("Emp no: " +empno);
-     System.out.println("deptno: " +deptno);
-     System.out.println("Grade: " +g);
-
-   }
-  }
+       String name;
+       float sal;
+       int deptno;
+ 
+       public Emp1(){
+       System.out.println("Default contructor is called");
+       name="guest";
+       sal=1000;
+       deptno=10;
+    }
+   
+    public Emp1(String n,float f,int i ){
+         name=n;
+         sal=f;
+         deptno=i;
+    }
+         
      
+
+     public void showData(){
+     System.out.println("Name :" +name);
+     System.out.println("Salary" +sal);
+     System.out.println("Deptno:" +deptno);
+   }
+     public static void main(String args[]){
+      Emp1 e =new Emp1("Rahul",1000,10000);
+      e.showData();
+      
+   }
+
+ }
+      
+     
+   
+     
+     
+       
+       

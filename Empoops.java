@@ -12,13 +12,14 @@
 
      public void showData(){
      System.out.println("Name :" +name);
-     System.out.println("Salary" +sal);
-     System.out.println("Deptno:" +deptno);
+     System.out.println("Salary" :+sal);
+     System.out.println("Deptno: deptno);
    }
      public static void main(String args[]){
       Emp e =new Emp();
       e.showData();
-      
+      e1.showData();
+      e2.showData();
    }
 
  }
